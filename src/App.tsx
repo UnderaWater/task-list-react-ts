@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import InputField from './components/InputField/InputField';
 
-function App() {
+const App: React.FC = () => {
+  const [inputValue, setInputValue] = useState<string>('');
+
   return (
-    <div className="App">
-      Hello world
+    <div className="tasklist">
+      <h1 className='tasklist__title'>
+        TASK LIST
+      </h1>
+      <InputField inputValue={inputValue} setInputValue={setInputValue} />
     </div>
   );
 }
