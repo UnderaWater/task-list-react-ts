@@ -22,3 +22,7 @@
     cursor: pointer;
     font-size: 20px;
 }
+
+.isDone {
+    text-decoration: line-through;
+}

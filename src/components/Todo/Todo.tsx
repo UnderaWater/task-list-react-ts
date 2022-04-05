@@ -11,15 +11,30 @@ interface TodoProps {
 }
 
 const Todo: React.FC<TodoProps> = ({ todo, todos, setTodos}) => {
+
+  const isTodoDone = (id: number) => {
+    setTodos(todos.map(todo => {
+      if(todo.id === id) {
+        return {...todo, isDone: !todo.isDone}
+      } else {
+        return todo
+      }
+    }))
+  }
+
+  const deleteTodo = (id: number) => {
+    setTodos(todos.filter(todo => todo.id !== id))
+  }
+
   return (
     <div className='tasklist__todo'>
-        <span className='tasklist__todo-item'>
+        <span className={`tasklist__todo-item ${todo.isDone ? 'isDone' : ''}`}>
             {todo.todo}
         </span>
         <div className='tasklist__todo-icons'>
             <AiFillEdit />
-            <AiFillDelete />
-            <MdDone />
+            <AiFillDelete onClick={() => deleteTodo(todo.id)} />
+            <MdDone onClick={() => isTodoDone(todo.id)} />
         </div>
     </div>
   )
