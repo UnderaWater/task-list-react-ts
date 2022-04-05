@@ -1,0 +1,24 @@
+.tasklist__todos {
+    margin-top: 20px;
+}
+
+.tasklist__todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    transition: .2s;
+    border-radius: 10px;
+    width: 50%;
+    background-color: #dddc0f;
+}
+
+.tasklist__todo-icons {
+    display: flex;
+    width: 13%;
+    justify-content: space-between;
+}
+
+.tasklist__todo-icons svg {
+    cursor: pointer;
+    font-size: 20px;
+}
