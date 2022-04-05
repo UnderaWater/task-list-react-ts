@@ -26,3 +26,8 @@
 .isDone {
     text-decoration: line-through;
 }
+
+.tasklist__todo-item {
+    word-wrap: break-word;
+    width: 50%;
+}
