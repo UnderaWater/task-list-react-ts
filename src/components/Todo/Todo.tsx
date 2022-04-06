@@ -8,6 +8,7 @@ interface TodoProps {
   todo: ITodo;
   setTodos: (todo: ITodo[]) => void;
   todos: ITodo[];
+  index: number;
 }
 
 const Todo: React.FC<TodoProps> = ({ todo, todos, setTodos }) => {

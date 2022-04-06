@@ -1,15 +1,25 @@
-.tasklist__todos {
-    margin-top: 20px;
-}
-
 .tasklist__todo {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     transition: .2s;
     border-radius: 10px;
-    width: 50%;
+    width: 90%;
     background-color: #dddc0f;
+}
+
+.tasklist__todo:hover {
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03);
+}
+
+.tasklist__main {
+    width: 45%;
+}
+
+.tasklist__main-tittle {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .tasklist__todo-icons {

@@ -1,6 +1,13 @@
-.tasklist__todos {
+.tasklist__wrapper {
     display: flex;
     justify-content: space-evenly;
     width: 90%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tasklist__todos {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
