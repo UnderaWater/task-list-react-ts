@@ -6,8 +6,25 @@
     margin-top: 20px;
 }
 
+.tasklist__main {
+    border-radius: 30px;
+}
+
 .tasklist__todos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.tasklist__main-tittle {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.green {
+    background-color: #3abd60;
+}
+
+.red {
+    background-color: #ef6e55;
 }

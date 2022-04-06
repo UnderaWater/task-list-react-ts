@@ -6,6 +6,7 @@
     border-radius: 10px;
     width: 90%;
     background-color: #dddc0f;
+    margin: 10px 0;
 }
 
 .tasklist__todo:hover {
@@ -40,4 +41,22 @@
 .tasklist__todo-item {
     word-wrap: break-word;
     width: 50%;
+}
+
+@media screen and (max-width: 1300px) {
+    .tasklist__todo-icons {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .tasklist__todo-icons {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tasklist__todo-icons {
+        width: 50%;
+    }
 }
